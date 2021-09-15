@@ -1,0 +1,12 @@
+.header {
+  margin: 0 300px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.header__logo {
+  width: 250px;
+  height: 150px;
+}
