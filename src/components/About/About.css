@@ -1,0 +1,133 @@
+/* about */
+
+.about {
+  display: flex;
+  font-family: 'Montserrat';
+}
+
+/* about__content */
+
+.about__content {
+  max-width: 1200px;
+  max-height: 609px;
+  display: flex;
+  flex-direction: column;
+  margin: 71px auto 65px;
+}
+
+/* about__wrapper-block-traditions */
+
+.about__wrapper-block-traditions {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* about__block-traditions */
+
+.about__block-traditions {
+  display: flex;
+  flex-direction: column;
+}
+
+/* about__title  */
+
+.about__title {
+  font-family: 'Merriweather';
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 60px;
+  color: #2B2D33;
+  margin: 41px 0 36px;
+}
+
+/* about__description */
+
+.about__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 612px;
+  max-height: 150px;
+  margin: 0;
+  white-space: pre-line;
+}
+
+
+/* about__block-images */
+
+.about__block-images {
+  display: flex;
+}
+
+/* about__wrapper-image-cigar */
+
+.about__wrapper-image-cigar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 268px;
+  margin-right: 40px;
+}
+
+/* about__image_cigar */
+
+.about__image_cigar {
+  height: 28px;
+  width: 148px;
+  background-image: url('../../images/image_cigar.svg');
+  background-repeat: no-repeat;
+}
+
+.about__image_cigar:last-of-type {
+  position: absolute;
+  left: 12px;
+  top: 9px;
+}
+
+/* about__image_hookah */
+
+.about__image_hookah {
+  width: 265px;
+  height: 326px;
+  background-image: url('../../images/image_hookah.svg');
+}
+
+/* about__block-services */
+
+.about__block-services {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+
+/* about__card */
+
+.about__card {
+  max-width: 355px;
+  max-height: 210px;
+  border-top: 1px solid #BDC4CF;
+  margin-left: 68px;
+}
+
+.about__card:first-of-type {
+  margin-left: 0;
+}
+
+/* about__card-title */
+
+.about__card-title {
+  font-weight: 700;
+  color: #2B2D33;
+  font-style: 18px;
+  line-height: 26px;
+  margin: 37px auto 27px 0;
+}
+
+/* about__card-description */ 
+.about__card-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #585E67;
+  margin: 0;
+}
