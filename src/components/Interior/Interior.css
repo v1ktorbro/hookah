@@ -1,0 +1,45 @@
+/* interior */
+
+.interior {
+  height: 640px;
+  background: linear-gradient(27.41deg, rgba(48, 51, 59, 0.94) 100%, rgba(48, 51, 59, 0.94) 100%), url('../../images/interior_background.png') 100%/cover;
+}
+
+/* interior__block-navigation */
+
+.interior__block-navigation {
+  padding-top: 62px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+/* interior__title */
+
+.interior__title {
+  font-family: 'Merriweather';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  color: #fff;
+  margin: 0;
+}
+
+/* interior__block-image */
+
+.interior__block-image {
+  margin-top: 45px;
+  margin-left: 300px;
+  display: grid;
+  /* grid-template-columns: repeat(4, minmax(350px, 410px)); */
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  overflow: hidden;
+}
+
+/* interior__image */ 
+.interior__image {
+  max-width: 360px;
+  max-height: 410px;
+}
