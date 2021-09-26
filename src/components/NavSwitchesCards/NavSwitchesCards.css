@@ -1,0 +1,22 @@
+/* nav-switches-cards */
+
+.nav-switches-cards {
+  align-self: center;
+}
+
+/* nav-switches-cards__button */
+
+.nav-switches-cards__button {
+  border: 1px solid #4D515D;
+  width: 34px;
+  height: 43px;
+  font-size: 19px;
+  line-height: 22px;
+  color: #D5D9E3;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-switches-cards__button:first-of-type {
+  margin-right: 10px;
+}
