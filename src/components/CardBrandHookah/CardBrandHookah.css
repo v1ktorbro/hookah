@@ -1,0 +1,51 @@
+/* card-brand-hookah */
+
+.card-brand-hookah {
+  border: 4px solid #CFD2D9;
+  max-width: 380px;
+  max-height: 273px;
+  box-sizing: border-box;
+}
+
+/* card-brand-hookah__block-title */
+
+.card-brand-hookah__block-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 30px 61px;
+}
+
+/* card-brand-hookah__title */
+
+.card-brand-hookah__title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 21px;
+  color: #2B2D33;
+}
+
+/* card-brand-hookah__price */
+
+.card-brand-hookah__price {
+  color: #6C525B;
+}
+
+/* card-brand-hookah__title-ingredient */
+
+.card-brand-hookah__title-ingredient {
+  margin: 0 30px 10px;
+  color: #2B2D33;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.card-brand-hookah__title-ingredient:last-of-type {
+  margin-bottom: 47px;
+}
+
+/* card-brand-hookah__kind-ingredient */
+
+.card-brand-hookah__kind-ingredient {
+  font-weight: 400;
+}
