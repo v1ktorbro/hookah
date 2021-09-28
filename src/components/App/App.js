@@ -1,6 +1,6 @@
 import './App.css';
 import Header from '../Header/Header';
-import Navigation from '../Navigation/Navigation';
+import HeaderNavigation from '../HeaderNavigation/HeaderNavigation';
 import Main from '../Main/Main';
 import About from '../About/About';
 import Interior from '../Interior/Interior';
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header>
-        <Navigation />
+        <HeaderNavigation />
       </Header>
       <Main />
       <About />

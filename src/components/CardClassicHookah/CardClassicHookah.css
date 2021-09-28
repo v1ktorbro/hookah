@@ -1,0 +1,81 @@
+/* card-classic-hookah */
+
+.card-classic-hookah {
+  border: 4px solid #CFD2D9;
+  padding-bottom: 34px; /* +11 дает маржин класс card-classic-hookah__grade */
+  align-self: flex-start;
+}
+
+/* card-classic-hookah__title */
+
+.card-classic-hookah__title {
+  font-size: 17px;
+  line-height: 21px;
+  margin: 45px 30px 31px;
+}
+
+/* card-classic-hookah__info-block */
+
+.card-classic-hookah__info-block {
+  color: #2B2D33;
+}
+
+/* card-classic-hookah__title-fruit */
+
+.card-classic-hookah__title-fruit {
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 12px;
+  margin-left: 30px;
+}
+
+/* card-classic-hookah__grade */
+
+.card-classic-hookah__grade {
+  margin: 0;
+  margin-left: 30px;
+  margin-bottom: 11px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: block;
+}
+
+
+/* card-classic-hookah__price */
+
+.card-classic-hookah__price {
+  color: #6C525B;
+  font-weight: 700;
+}
+
+/* card-classic-hookah__strength */
+
+.card-classic-hookah__strength {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  margin-left: 30px;
+  margin-top: -10px;
+  margin-bottom: 17px;
+}
+
+/* card-classic-hookah__note */
+
+.card-classic-hookah__note {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #2B2D33;
+  padding-top: 11px;
+  margin: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+  max-width: 320px;
+}
+
+.card-classic-hookah__note:empty {
+  display: none;
+}

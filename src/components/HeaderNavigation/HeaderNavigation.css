@@ -1,10 +1,10 @@
-.navigation {
+.header-navigation {
   display: flex;
   align-items: flex-end;
   margin-left: 134px;
 }
 
-.navigation__links {
+.header-navigation__links {
   display: flex;
   width: 612px;
   padding: 0;
@@ -14,11 +14,11 @@
   margin-left: 105px;
 }
 
-.navigation__list-item {
+.header-navigation__list-item {
   list-style-type: none;
 }
 
-.navigation__link {
+.header-navigation__link {
   text-decoration: none;
   font-family: 'Montserrat';
   font-weight: 500;
@@ -27,8 +27,8 @@
   color: #EDF0F4;
 }
 
-.navigation__link:visited,
-.navigation__link:active {
+.header-navigation__link:visited,
+.header-navigation__link:active {
   text-decoration: none;
   color: #EDF0F4;
 }

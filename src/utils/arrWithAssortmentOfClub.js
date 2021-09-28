@@ -6,21 +6,21 @@ export const arrWithAssortmentBrandHookahs = [
     name: "Баунти",
     price: "3000",
     supplements: "шоколад, молоко, кокосовый сироп",
-    bowl: "ананас",
+    bowl: [["ананас"]],
     strength: "средняя",
   },
   {
     name: "Мохито",
     price: "3000",
     supplements: "мята, лайм, белый ром и много-много льда",
-    bowl: "яблоко, апельсин, грейпфрут",
+    bowl: [["яблоко"], ["апельсин"], ["грейпфрут"]],
     strength: "крепкий",
   },
   {
     name: "Пина колада",
     price: "3000",
     supplements: "молоко, ананасовый сок, кокосовый сироп, лед",
-    bowl: "ананас",
+    bowl: ["ананас"],
     strength: "средняя",
   },
 ];
@@ -43,7 +43,44 @@ export const arrWithAssortmentCigars = [
 
 export const arrWithAssortmentClassicHookahs = [
   {
+    name: "Кальяны на глиняной чаше",
+    note: "",
+    views: [
+      {
+        fruit: "",
+        type: [
+          {
+            classification: "Standart:",
+            price: "1600",
+            strength: "легкий",
+          },
+          {
+            classification: "Premium:",
+            price: "1900",
+            strength: "крепкий",
+          },
+        ]
+      },
+      {
+        fruit: "Замена чаши",
+        type: [
+          {
+            classification: "Standart:",
+            price: "900",
+            strength: "",
+          },
+          {
+            classification: "Premium:",
+            price: "1200",
+            strength: "",
+          },
+        ]
+      },
+    ],
+  },
+  {
     name: "Кальяны на фруктовой чаше",
+    note: "",
     views: [
       {
         fruit: "Апельсин",
@@ -107,5 +144,40 @@ export const arrWithAssortmentClassicHookahs = [
       },
     ],
   },
-
+  {
+    name: "Добавки в колбу",
+    note: "Вы можете добавить в кальян любой алкоголь из барной карты ресторана Panorama A.S.P.",
+    views: [
+      {
+        fruit: "",
+        type: [
+          {
+            classification: "Вино",
+            price: "600",
+            strength: "",
+          },
+          {
+            classification: "Мята:",
+            price: "100",
+            strength: "",
+          },
+        ]
+      },
+      {
+        fruit: "",
+        type: [
+          {
+            classification: "Молоко:",
+            price: "200",
+            strength: "",
+          },
+          {
+            classification: "Сок в ассортименте:",
+            price: "300",
+            strength: "",
+          },
+        ]
+      },
+    ],
+  },
 ];
