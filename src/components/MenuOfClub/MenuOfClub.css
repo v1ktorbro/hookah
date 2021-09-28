@@ -4,15 +4,10 @@
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
-  margin: 300px 300px;
-  height: 500px;
-  border: 1px solid red;
+  margin: 111px 300px 120px;
   position: relative;
-}
-
-/* menu-of-club__wrapper */
-
-.menu-of-club__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 /* menu-of-club__title */
@@ -61,4 +56,13 @@
 .menu-of-club__navigation-title_active {
   background-color: #6C525B;
   color: #E3E5EA;
+}
+
+/* menu-of-club__block-cards */
+
+.menu-of-club__block-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(236px ,380px));
+  grid-column-gap: 30px;
+  margin-top: 51px;
 }
