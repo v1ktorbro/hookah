@@ -1,0 +1,59 @@
+/* nav-switches-list-menu */
+
+.nav-switches-list-menu {
+  display: grid;
+  grid-template-areas: 
+                        "title logo"
+                        "navigation logo";
+  border-bottom: 1px solid #BDC4CF;
+}
+
+/* nav-switches-list-menu__title */
+
+.nav-switches-list-menu__title {
+  grid-area: title;
+  font-size: 36px;
+  line-height: 53px;
+  color: #2B2D33;
+  margin-top: 33px;
+  margin-bottom: 43px;
+}
+
+/* nav-switches-list-menu__logo-image */
+
+.nav-switches-list-menu__logo-image {
+  grid-area: logo;
+  max-width: 188px;
+  max-height: 157px;
+  align-self: flex-start;
+  margin-left: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/* nav-switches-list-menu__navigation */
+
+.nav-switches-list-menu__navigation {
+  grid-area: navigation;
+  display: flex;
+}
+
+/* nav-switches-list-menu__navigation-title */
+
+.nav-switches-list-menu__navigation-title {
+
+  padding: 19px  20px 13px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  color: #2B2D33;
+  cursor: pointer;
+}
+
+/* menu-of-club__navigation-title_active */ 
+
+.nav-switches-list-menu__navigation-title_active {
+  background-color: #6C525B;
+  color: #E3E5EA;
+}
