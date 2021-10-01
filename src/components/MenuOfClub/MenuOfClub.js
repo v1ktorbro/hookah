@@ -1,62 +1,58 @@
 import './MenuOfClub.css';
 import React, { useEffect, useState } from 'react';
+import NavSwitchesListMenu from '../NavSwitchesListMenu/NavSwitchesListMenu';
 import CardBrandHookah from '../CardBrandHookah/CardBrandHookah';
 import CardOfCigars from '../CardOfCigars/CardOfCigars';
 import CardClassicHookah from '../CardClassicHookah/CardClassicHookah';
+import logoForNavAshtray from '../../images/image_ashtray.svg';
 import {arrWithAssortmentBrandHookahs, arrWithAssortmentCigars, arrWithAssortmentClassicHookahs} from '../../utils/arrWithAssortmentOfClub';
 
 function MenuOfClub() {
-  const [isMenuBrandHookahs, setIsMenuBrandHookahs] = useState(false);
-  const [isMenuCigars, setIsMenuCigars] = useState(false);
-  const [isMenuClassicHookahs, setIsMenuClassicHookahs] = useState(false);
+  const [allCards, setIsAllCards] = useState([]);
 
-  function handleMenuBrandHookahs() {
-    setIsMenuBrandHookahs(true);
-    setIsMenuCigars(false);
-    setIsMenuClassicHookahs(false);
-  }
-
-  function handleMenuCigars() {
-    setIsMenuBrandHookahs(false);
-    setIsMenuCigars(true);
-    setIsMenuClassicHookahs(false);
-  }
-
-  function handleMenuClassicHookahs() {
-    setIsMenuBrandHookahs(false);
-    setIsMenuCigars(false);
-    setIsMenuClassicHookahs(true);
+  function setNewCutListCard (idTargetList) {
+    allCards.filter((card, i) => {
+      if (card.id === idTargetList) {
+        card.style.display = "block";
+        return card;
+      } else {
+        return card.style.display = "none";
+      }
+    });
   }
 
   useEffect(() => {
-    setIsMenuBrandHookahs(true);
+    const findAllCards = Array.from(document.querySelector(".menu-of-club__block-cards").childNodes);
+    const currentListMenu = document.querySelector('.nav-switches-list-menu__navigation-title_active');
+    setIsAllCards(findAllCards);
+    findAllCards.filter((card) => {
+      if (card.id !== currentListMenu.id) return card.style.display = "none";
+    })
   }, []);
 
   return (
       <section className="menu-of-club">
-        <div className="menu-of-club__wrapper">
-          <h2 className="menu-of-club__title">Меню</h2>
-          <span className="menu-of-club__image-ashtray" />
-          <nav className="menu-of-club__navigation">
-            <h3 onClick={() => handleMenuBrandHookahs()} className={isMenuBrandHookahs ? "menu-of-club__navigation-title menu-of-club__navigation-title_active" : "menu-of-club__navigation-title"}>Фирменные кальяны</h3>
-            <h3 onClick={() => handleMenuCigars()} className={isMenuCigars ? "menu-of-club__navigation-title menu-of-club__navigation-title_active" : "menu-of-club__navigation-title"}>Сигары и сигарилы</h3>
-            <h3 onClick={() => handleMenuClassicHookahs()} className={isMenuClassicHookahs ? "menu-of-club__navigation-title menu-of-club__navigation-title_active" : "menu-of-club__navigation-title"}>Классические кальяны</h3>
-          </nav>
-        </div>
+      <NavSwitchesListMenu 
+        title="Меню"
+        listTitles="Фирменные кальяны, Сигары и сигарилы, Классические кальяны"
+        idTitles="brand-hookah, cigars, classic-hookah"
+        logoImageSrc={logoForNavAshtray}
+        setNewCutListCard={setNewCutListCard}
+      />
         <div className="menu-of-club__block-cards">
-          {isMenuBrandHookahs && arrWithAssortmentBrandHookahs.map((card, index) => {
+          {arrWithAssortmentBrandHookahs.map((card, index) => {
             return (
-              <CardBrandHookah dataCard={card} key={index} />
+              <CardBrandHookah idCard="brand-hookah" dataCard={card} key={index} />
             );
           })}
-          {isMenuCigars && arrWithAssortmentCigars.map((card, index) => {
+          {arrWithAssortmentCigars.map((card, index) => {
             return (
-              <CardOfCigars dataCard={card} key={index} />
+              <CardOfCigars idCard="cigars" dataCard={card} key={index} />
             );
           })}
-          {isMenuClassicHookahs && arrWithAssortmentClassicHookahs.map((card, index) => {
+          {arrWithAssortmentClassicHookahs.map((card, index) => {
             return (
-              <CardClassicHookah dataCard={card} key={index} />
+              <CardClassicHookah idCard="classic-hookah" dataCard={card} key={index} />
             );
           })}
         </div>
