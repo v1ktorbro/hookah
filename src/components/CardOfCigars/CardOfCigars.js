@@ -1,8 +1,8 @@
 import './CardOfCigars.css';
 
-function CardOfCigars({dataCard}) {
+function CardOfCigars({dataCard, idCard}) {
   return (
-    <article className="card-of-cigars">
+    <article className="card-of-cigars" id={idCard}>
       <h3 className="card-of-cigars__title">{dataCard.name}</h3>
       {dataCard.brands.map((brand, index) => {
         return (

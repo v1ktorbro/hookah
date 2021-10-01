@@ -1,8 +1,8 @@
 import './CardBrandHookah.css';
 
-function CardBrandHookah({dataCard}) {
+function CardBrandHookah({dataCard, idCard}) {
   return (
-    <article className="card-brand-hookah">
+    <article className="card-brand-hookah" id={idCard}>
       <div className="card-brand-hookah__block-title">
         <h3 className="card-brand-hookah__title">&#171;{dataCard.name}&#187;</h3>
         <span className="card-brand-hookah__price">{dataCard.price}&#32;&#8381;</span>
