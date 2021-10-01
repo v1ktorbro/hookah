@@ -1,8 +1,8 @@
 import './CardClassicHookah.css';
 
-function CardClassicHookah({dataCard}) {
+function CardClassicHookah({dataCard, idCard}) {
   return (
-    <article className="card-classic-hookah">
+    <article className="card-classic-hookah" id={idCard}>
       <h3 className="card-classic-hookah__title">{dataCard.name}</h3>
       {dataCard.views.map((el, i) => {
         return (
