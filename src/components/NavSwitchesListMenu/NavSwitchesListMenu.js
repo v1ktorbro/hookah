@@ -3,7 +3,8 @@
 import './NavSwitchesListMenu.css';
 import React, {useEffect} from 'react';
 
-function NavSwitchesListMenu({title, listTitles, logoImageSrc}) {
+function NavSwitchesListMenu({title, listTitles, logoImageSrc, setNewCutListCard, idTitles}) {
+  /* listTitles idTitles взаимосвязаны  */
 
   function toggleBtnBackgroundColor(evt) {
     /* собираем и очищаем бэки у всех кнопок */
@@ -12,9 +13,10 @@ function NavSwitchesListMenu({title, listTitles, logoImageSrc}) {
       btn.classList.remove('nav-switches-list-menu__navigation-title_active');
     })
     evt.target.classList.add("nav-switches-list-menu__navigation-title_active");
+    setNewCutListCard(evt.target.id);
   }
 
-  useEffect(() => {
+  useEffect((evt) => {
     /* по макету, первая кнопка меню уже выделена цветом */
     document.querySelector(".nav-switches-list-menu__navigation-title").classList.add("nav-switches-list-menu__navigation-title_active");
   }, []);
@@ -26,7 +28,7 @@ function NavSwitchesListMenu({title, listTitles, logoImageSrc}) {
     <nav className="nav-switches-list-menu__navigation">
       {listTitles.split(", ").map((title, index) => {
         return (
-          <h3 onClick={(evt) => toggleBtnBackgroundColor(evt)} className="nav-switches-list-menu__navigation-title" key={index}>{title}</h3>
+          <h3 onClick={(evt) => toggleBtnBackgroundColor(evt)} className="nav-switches-list-menu__navigation-title" key={index} id={idTitles.split(", ")[index]} >{title}</h3>
         );
       })}
     </nav>
