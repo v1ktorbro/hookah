@@ -6,6 +6,7 @@ import About from '../About/About';
 import Interior from '../Interior/Interior';
 import NavSwitchesCards from '../NavSwitchesCards/NavSwitchesCards';
 import MenuOfClub from '../MenuOfClub/MenuOfClub';
+import FromUs from '../FromUs/FromUs';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <NavSwitchesCards />
       </Interior>
       <MenuOfClub />
+      <FromUs />
     </>
   );
 }
