@@ -1,0 +1,92 @@
+/* from-us */
+
+.from-us {
+  max-width: 1500px;
+  height: 659px;
+  margin-bottom: 112px;
+  background-image: url('../../images/about_us_main.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* from-us__card-description */
+
+.from-us__card-description {
+  max-width: 664px;
+  max-height: 479px;
+  align-self: center;
+  background-color: #30333B;
+}
+
+/* from-us__title-block */
+
+.from-us__title-block {
+  display: flex;
+  margin-top: 54px;
+  margin-right: 54px;
+  margin-left: 65px;
+  margin-bottom: 57px;
+  justify-content: space-between;
+}
+
+/* from-us__title */
+
+.from-us__title {
+  font-family: 'Merriweather';
+  font-size: 36px;
+  line-height: 53px;
+  color: #fff;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* from-us__image-petal */
+
+.from-us__image-petal {
+  max-height: 54px;
+  max-width: 171px;
+  align-self: center;
+}
+
+/* from-us__list */
+
+.from-us__list {
+  font-size: 'Montserrat';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #fff;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 64px;
+  margin-top: 0;
+  margin-bottom: 81px;
+}
+
+/* from-us__list-item */
+
+.from-us__list-item {
+  height: 26px;
+  font-size: 26px;
+  display: flex;
+  color: #686D7C;
+  height: 100%;
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+.from-us__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+/* from-us-list-item-text */
+
+.from-us-list-item-text {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  line-height: 24px;
+  margin: auto 23px;
+  color: #fff;
+}

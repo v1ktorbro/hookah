@@ -25,6 +25,7 @@ function MenuOfClub() {
     const findAllCards = Array.from(document.querySelector(".menu-of-club__block-cards").childNodes);
     const currentListMenu = document.querySelector('.nav-switches-list-menu__navigation-title_active');
     setIsAllCards(findAllCards);
+    // eslint-disable-next-line array-callback-return
     findAllCards.filter((card) => {
       if (card.id !== currentListMenu.id) return card.style.display = "none";
     })
