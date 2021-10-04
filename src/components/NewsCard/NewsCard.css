@@ -1,0 +1,35 @@
+/* news-card */
+
+.news-card {
+  max-width: 380px;
+}
+
+.news-card:last-of-type {
+  margin-right: 0;
+}
+
+/* news-card__image */
+
+.news-card__image {
+  max-height: 265px;
+  margin-bottom: 21px;
+}
+
+/* news-card__data */
+
+.news-card__data {
+  font-size: 14px;
+  color: #6C525B;
+  line-height: 20px;
+}
+
+/* news-card__title */
+
+.news-card__title {
+  font-size: 18px;
+  line-height: 25px;
+  color: #2B2D33;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 14px;
+}

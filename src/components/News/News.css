@@ -1,0 +1,35 @@
+/* news */
+
+.news {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 400px;
+}
+
+/* news__nav-wrapper */
+
+.news__nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+/* news__cards */
+
+.news__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* news__title */
+
+.news__title {
+  font-size: 36px;
+  line-height: 53px;
+  color: #2B2D33;
+  margin: 0;
+  font-family: 'Merriweather';
+}
