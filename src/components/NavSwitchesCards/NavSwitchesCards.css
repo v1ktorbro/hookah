@@ -13,10 +13,18 @@
   font-size: 19px;
   line-height: 22px;
   color: #D5D9E3;
+  color: inherit;
   background-color: transparent;
   cursor: pointer;
 }
 
 .nav-switches-cards__button:first-of-type {
   margin-right: 10px;
+}
+
+/* nav-switches-cards__button_disabled-style */
+
+.nav-switches-cards__button_disabled-style {
+  border: 1px solid #AEB2BA;
+  color: #8E9199;
 }

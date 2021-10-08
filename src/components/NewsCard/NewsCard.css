@@ -13,6 +13,7 @@
 .news-card__image {
   max-height: 265px;
   margin-bottom: 21px;
+  width: 100%;
 }
 
 /* news-card__data */

@@ -7,6 +7,7 @@ import Interior from '../Interior/Interior';
 import NavSwitchesCards from '../NavSwitchesCards/NavSwitchesCards';
 import MenuOfClub from '../MenuOfClub/MenuOfClub';
 import FromUs from '../FromUs/FromUs';
+import News from '../News/News';
 
 function App() {
   return (
@@ -17,10 +18,15 @@ function App() {
       <Main />
       <About />
       <Interior>
-        <NavSwitchesCards />
+        <NavSwitchesCards
+          style={{color: '#D5D9E3'}}
+        />
       </Interior>
       <MenuOfClub />
       <FromUs />
+      <News 
+        countCardOnPage={3}
+      />
     </>
   );
 }
