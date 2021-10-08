@@ -1,10 +1,12 @@
 import './NavSwitchesCards.css';
+/* кнопки наследуют цвет компонента (через пропс style) */
 
-function NavSwitchesCards({hStyle}) {
+function NavSwitchesCards({style, btnPrevImage, btnNextImage, idBtn}) {
+  
   return (
-    <nav className="nav-switches-cards" style={{hStyle}}>
-      <button className="nav-switches-cards__button nav-switches-cards__button_left">&#60;</button>
-      <button className="nav-switches-cards__button nav-switches-cards__button_right">&#62;</button>
+    <nav className="nav-switches-cards" style={style}>
+      <button onClick={(evt) => btnPrevImage(evt)} className="nav-switches-cards__button" id={`btn-${idBtn}-prev`}>&#60;</button>
+      <button onClick={(evt) => btnNextImage(evt)} className="nav-switches-cards__button" id={`btn-${idBtn}-next`}>&#62;</button>
     </nav>
   );
 }
