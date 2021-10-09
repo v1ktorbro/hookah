@@ -8,6 +8,7 @@ import NavSwitchesCards from '../NavSwitchesCards/NavSwitchesCards';
 import MenuOfClub from '../MenuOfClub/MenuOfClub';
 import FromUs from '../FromUs/FromUs';
 import News from '../News/News';
+import WindowAdditionalProduct from '../WindowAdditionalProduct/WindowAdditionalProduct';
 
 function App() {
   return (
@@ -26,6 +27,11 @@ function App() {
       <FromUs />
       <News 
         countCardOnPage={3}
+      />
+      <WindowAdditionalProduct 
+        title="Наш клуб входит в состав ресторана Panorama ASP"
+        description="Поэтому гости могут не только насладиться дымным, но и попробовать самые разнообразные коктейли, а также вкусно поесть"
+        btnName="Подробнее о ресторане "
       />
     </>
   );
