@@ -31,7 +31,7 @@ function Footer () {
           Facebook
         </button>
         <button className="footer__btn footer__btn_instagram">
-          <i class="lab la-instagram" style={{marginRight: '5px', fontSize: '23px', color: '#6A6F7D'}} />
+          <i className="lab la-instagram" style={{marginRight: '5px', fontSize: '23px', color: '#6A6F7D'}} />
           Instagram
         </button>
       </div>
