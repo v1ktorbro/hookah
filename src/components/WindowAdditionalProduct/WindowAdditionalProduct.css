@@ -1,0 +1,58 @@
+/* window-additional-product */
+
+.window-additional-product {
+  margin-top: 111px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #30333B 44.39%, rgba(48, 51, 59, 0.51) 100%), url('../../images/image_snake.png') 100%/contain;
+}
+
+/* window-additional-product__wrapper */
+
+.window-additional-product__wrapper {
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* window-additional-product__title */
+
+.window-additional-product__title {
+  font-family: 'Merriweather';
+  font-style: 24px;
+  line-height: 35px;
+  color: #fff;
+  margin-top: 65px;
+  margin-bottom: 0;
+}
+
+/* window-additional-product__description */
+
+.window-additional-product__description {
+  font-size: 18px;
+  line-height: 27px;
+  color: #C8CDD8;
+  font-weight: 400;
+  max-width: 685px;
+  margin-top: 20px;
+  margin-bottom: 63px;
+}
+
+/* window-additional-product__btn-know-more */
+
+.window-additional-product__btn-know-more {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #fff;
+  height: 61px;
+  width: 274px;
+  background-color: #6C525B;
+  align-self: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 300px;
+}
