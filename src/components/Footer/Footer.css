@@ -1,0 +1,113 @@
+/* footer */
+
+.footer {
+  display: flex;
+}
+
+
+/* footer__wrapper */
+
+.footer__wrapper {
+  margin-left: 72px;
+  margin-top: 97px;
+  margin-bottom: 130px;
+}
+
+/* footer__map-image */
+
+.footer__map-image {
+  max-width: 1000px;
+
+}
+
+/* footer__block-contant */
+
+.footer__block-contant { 
+  display: flex;
+}
+
+/* footer__wrapper-block-contact */
+
+.footer__wrapper-block-contact {
+  display: flex;
+  flex-direction: column;
+  color: #2B2D33;
+}
+
+/* footer__title */
+
+.footer__title {
+  font-family: 'Merriweather';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+}
+
+/* footer__phone-number */
+
+.footer__phone-number {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+/* footer__adress */
+
+.footer__adress {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  max-width: 255px;
+  display: flex;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+/* footer__time-work */
+
+.footer__time-work { 
+  max-width: 180px;
+  display: flex;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 51px;
+}
+
+/* footer__image-lighter */
+
+.footer__image-lighter {
+  width: 103px;
+  height: 100px;
+  margin-left: 9px;
+}
+
+/* footer__btns-block */
+
+.footer__btns-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer__btn */
+
+.footer__btn {
+  border: none;
+  outline: none;
+  background-color: #30333B;
+  width: 180px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+}
+
+.footer__btn:first-of-type {
+  margin-right: 15px;
+}
