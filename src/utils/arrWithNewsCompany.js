@@ -29,4 +29,14 @@ export const arrWithNewsCompany = [
     dataNews: '8 апреля',
     title: 'Готовимся к вечеру с сигарами Davidoff'
   },
+  {
+    srcImage: require('../images/image_card_news_2.png').default,
+    dataNews: '8 апреля',
+    title: 'Дорогие гости, по выходным наш курительный клуб работает до 4 утра'
+  },
+  {
+    srcImage: require('../images/image_card_news_3.png').default,
+    dataNews: '26 марта',
+    title: 'Готовимся к вечеру с сигарами Davidoff'
+  },
 ];
